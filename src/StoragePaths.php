@@ -20,9 +20,21 @@ class StoragePaths
             throw new InvalidArgumentException('A storage-paths name cannot be empty');
         }
 
+        if (defined('PHP_OS_FAMILY')) {
+            $defaultOS = PHP_OS_FAMILY;
+        } else {
+            if (DIRECTORY_SEPARATOR === '\\') {
+                $defaultOS = 'Windows';
+            } elseif (PHP_OS === 'OSX' || PHP_OS === 'Darwin') {
+                $defaultOS = 'Darwin';
+            } else {
+                $defaultOS = 'Linux';
+            }
+        }
+
         $options = array_merge([
             'suffix' => 'php',
-            'os' => PHP_OS_FAMILY
+            'os' => $defaultOS
         ], $options);
 
         if (is_string($options['suffix']) && strlen($options['suffix']) > 0) {

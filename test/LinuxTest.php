@@ -10,7 +10,7 @@ final class LinuxTest extends TestCase
 {
     protected function setUp(): void
     {
-        if (PHP_OS_FAMILY === 'Darwin' || PHP_OS_FAMILY === 'Windows') {
+        if (PHP_OS === 'Darwin' || PHP_OS === 'OSX' || DIRECTORY_SEPARATOR === '\\') {
             $this->markTestSkipped();
         }
     }

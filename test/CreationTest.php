@@ -22,7 +22,19 @@ final class CreationTest extends TestCase
 
     public function testInfersOsSpecificClass(): void
     {
-        switch (PHP_OS_FAMILY) {
+        if (defined('PHP_OS_FAMILY')) {
+            $defaultOS = PHP_OS_FAMILY;
+        } else {
+            if (DIRECTORY_SEPARATOR === '\\') {
+                $defaultOS = 'Windows';
+            } elseif (PHP_OS === 'OSX' || PHP_OS === 'Darwin') {
+                $defaultOS = 'Darwin';
+            } else {
+                $defaultOS = 'Linux';
+            }
+        }
+
+        switch ($defaultOS) {
             case 'Darwin':
                 $class = MacOSStoragePaths::class;
                 break;
