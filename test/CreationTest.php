@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Loilo\StoragePaths\Test;
+
 use Loilo\StoragePaths\LinuxStoragePaths;
 use Loilo\StoragePaths\MacOSStoragePaths;
 use Loilo\StoragePaths\StoragePathsInterface;

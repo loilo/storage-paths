@@ -1,9 +1,12 @@
 <?php
 declare(strict_types=1);
 
+namespace Loilo\StoragePaths\Test;
+
+use InvalidArgumentException;
 use Loilo\StoragePaths\StoragePaths;
-use PHPUnit\Framework\TestCase;
 use Loilo\StoragePaths\StoragePathsInterface;
+use PHPUnit\Framework\TestCase;
 
 final class NameTest extends TestCase
 {

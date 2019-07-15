@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+namespace Loilo\StoragePaths\Test;
+
 use Loilo\StoragePaths\StoragePaths;
 use PHPUnit\Framework\TestCase;
 

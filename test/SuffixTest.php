@@ -1,9 +1,10 @@
 <?php
 declare(strict_types=1);
 
+namespace Loilo\StoragePaths\Test;
+
 use Loilo\StoragePaths\StoragePaths;
 use PHPUnit\Framework\TestCase;
-use Loilo\StoragePaths\StoragePathsInterface;
 
 final class SuffixTest extends TestCase
 {
