@@ -1,3 +1,7 @@
+<div align="center">
+  <img alt="Storage Paths logo: a file cabinet with an open drawer which contains printed document" src="storage-paths.svg" width="196" height="196">
+</div>
+
 # Storage Paths
 [![Test status on Travis](https://badgen.net/travis/loilo/storage-paths?label=tests&icon=travis)](https://travis-ci.org/loilo/storage-paths)
 [![Version on packagist.org](https://badgen.net/packagist/v/loilo/storage-paths)](https://packagist.org/packages/loilo/storage-paths)
