@@ -1,6 +1,6 @@
 # Storage Paths
-![Test status on Travis](https://badgen.net/travis/loilo/storage-paths?label=tests&icon=travis)
-![Version on packagist.org](https://badgen.net/packagist/v/loilo/storage-paths)
+[![Test status on Travis](https://badgen.net/travis/loilo/storage-paths?label=tests&icon=travis)](https://travis-ci.org/loilo/storage-paths)
+[![Version on packagist.org](https://badgen.net/packagist/v/loilo/storage-paths)](https://packagist.org/packages/loilo/storage-paths)
 
 This package yields OS-specific paths for storing your project's config, cache, logs etc. While the API has been adjusted for PHP, the research and opinionated fallbacks stem from the Node.js [env-paths](https://github.com/sindresorhus/env-paths) package by [Sindre Sorhus](https://github.com/sindresorhus).
 
