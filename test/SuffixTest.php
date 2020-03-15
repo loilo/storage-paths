@@ -8,6 +8,13 @@ use PHPUnit\Framework\TestCase;
 
 final class SuffixTest extends TestCase
 {
+    protected function setUp(): void
+    {
+        if (DIRECTORY_SEPARATOR === '\\') {
+            $this->markTestSkipped();
+        }
+    }
+
     public function testCustomSuffix(): void
     {
         $paths = StoragePaths::for('test-app', [ 'suffix' => 'x' ]);
